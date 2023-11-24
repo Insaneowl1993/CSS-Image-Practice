@@ -1,0 +1,32 @@
+
+    body{
+        background-color:#66D0FF;
+      }
+      .clouds {
+         margin-top:70px;
+         width:350px;
+         height:120px;
+         background:#ECEFF1;
+         box-shadow: 10px 10px rgba(0,0,0,0.2);
+         border-radius:100px;
+      }
+      .clouds::after, 
+      .clouds::before{
+          content:"";
+          position:relative;
+          display:inline-block;
+          background:inherit;
+          border-radius:inherit;
+      }
+      .clouds::after{
+          width:100px;
+          height:100px;
+          top:-140px;
+          left:-120px;
+      }
+      .clouds::before{
+          width:180px;
+          height:180px;
+          top: -70px;
+          left:130px;
+      }
